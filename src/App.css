@@ -45,6 +45,3 @@ button:hover {
 img {
   cursor: pointer;
 }
-img:hover{
-  opacity: 0.5;
-}

@@ -1,0 +1,19 @@
+.CardItem{
+    border: 1px solid black;
+    margin: 2rem;
+    
+}
+.ItemImg {
+    width: 300px;
+}
+.header{
+    font-weight: bold;
+    font-size: 30px;
+}
+.Info{
+    font-size: 20px;
+}
+.ItemFooter{
+    justify-content: center;
+    text-align: center;
+}
