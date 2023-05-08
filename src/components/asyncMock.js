@@ -14,8 +14,8 @@ const products = [
         price : 10000 ,
         category : 'pantalon',
         img : 'https://w7.pngwing.com/pngs/63/280/png-transparent-jeans-denim-slim-fit-pants-bell-bottoms-jeans-blue-fashion-boy-thumbnail.png' ,
-        stock: 25,
-        description: 'descripcion de Iphone 12'
+        stock: 12,
+        description: 'Pantalon'
     },
     {
         id: '3',
@@ -23,7 +23,7 @@ const products = [
         price : 1000,
         category: 'buzo' ,
         img : 'https://estampadosmendoza.com.ar/wp-content/uploads/2017/04/buzo-liso-png.png' ,
-        stock : 34 ,
+        stock : 23 ,
         description : 'buzo' 
     },
     {
@@ -32,7 +32,7 @@ const products = [
         price : 1000,
         category: 'short' ,
         img : 'https://www.nicepng.com/png/full/919-9195958_shorts-png-png-shorts.png' ,
-        stock : 34 ,
+        stock : 45 ,
         description : 'short' 
     },
     {
@@ -41,7 +41,7 @@ const products = [
         price : 1000,
         category: 'medias' ,
         img : 'https://e7.pngegg.com/pngimages/417/298/png-clipart-sock-hosiery-black-socks-image-file-formats-socks.png' ,
-        stock : 34 ,
+        stock : 78 ,
         description : 'medias' 
     },
     {
@@ -50,12 +50,12 @@ const products = [
         price : 1000,
         category: 'campera' ,
         img : 'https://www.montagne.com.ar/tecnologias/soft-down/img/campera.png',
-        stock : 34 ,
+        stock : 35 ,
         description : 'campera' 
     }
 
 ]
-export const getProductById = () => {
+export const getProducts = () => {
     return new Promise ((resolve) => {
         setTimeout (() =>{
             resolve(products)
@@ -63,7 +63,7 @@ export const getProductById = () => {
     })
 }
 
-export const getElementById = (productId) => {
+export const getProductById = (productId) => {
     return new Promise ((resolve) => {
         setTimeout (() => {
             resolve(products.find(prod => prod.id === productId))

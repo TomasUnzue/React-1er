@@ -1,5 +1,4 @@
 .CardItem{
-    border: 1px solid black;
     margin: 2rem;
     
 }
@@ -8,7 +7,7 @@
 }
 .header{
     font-weight: bold;
-    font-size: 30px;
+    font-size: 35px;
 }
 .Info{
     font-size: 20px;

@@ -28,7 +28,7 @@ nav {
   display: flex;
   justify-content: space-between;
   text-align: center;
-
+  margin: 10px;
 }
 button {
   padding: 10px;
@@ -44,4 +44,7 @@ button:hover {
 }
 img {
   cursor: pointer;
+}
+.categories{
+  margin: 10px;
 }
