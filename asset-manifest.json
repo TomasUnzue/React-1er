@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/React-2da-preentrega/static/css/main.1a627599.css",
+    "main.js": "/React-2da-preentrega/static/js/main.88b4883f.js",
+    "static/media/carro-de-la-carretilla.png": "/React-2da-preentrega/static/media/carro-de-la-carretilla.435da572d43ea8c1e4f1.png",
+    "index.html": "/React-2da-preentrega/index.html",
+    "main.1a627599.css.map": "/React-2da-preentrega/static/css/main.1a627599.css.map",
+    "main.88b4883f.js.map": "/React-2da-preentrega/static/js/main.88b4883f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1a627599.css",
+    "static/js/main.88b4883f.js"
+  ]
+}
