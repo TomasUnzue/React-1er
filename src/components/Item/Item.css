@@ -1,6 +1,5 @@
 .CardItem{
-    margin: 2rem;
-    
+    margin: 2rem;  
 }
 .ItemImg {
     width: 300px;
@@ -10,9 +9,21 @@
     font-size: 35px;
 }
 .Info{
-    font-size: 20px;
+    font-weight: bold;
+    font-size: 24px;
 }
 .ItemFooter{
     justify-content: center;
     text-align: center;
+    font-size: 1.5rem;
+}
+.Option{
+    color: #780000;
+    padding: 10px;
+    text-decoration: none;
+}
+.Option:hover{
+    font-size: 25px;
+    color: #c1121f;
+    text-decoration: underline;
 }

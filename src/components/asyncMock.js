@@ -3,7 +3,7 @@ const products = [
         id: '1',
         name: 'remera',
         price : 10000 , 
-        category : 'remera',
+        category : 'remera basica',
         img :'https://e7.pngegg.com/pngimages/779/30/png-clipart-white-t-shirt-white-t-shirt.png',
         stock: 25,
         description: 'remera'
@@ -15,7 +15,7 @@ const products = [
         category : 'pantalon',
         img : 'https://w7.pngwing.com/pngs/63/280/png-transparent-jeans-denim-slim-fit-pants-bell-bottoms-jeans-blue-fashion-boy-thumbnail.png' ,
         stock: 12,
-        description: 'Pantalon'
+        description: 'Pantalon estilo mom'
     },
     {
         id: '3',
@@ -24,7 +24,7 @@ const products = [
         category: 'buzo' ,
         img : 'https://estampadosmendoza.com.ar/wp-content/uploads/2017/04/buzo-liso-png.png' ,
         stock : 23 ,
-        description : 'buzo' 
+        description : 'buzo oversize' 
     },
     {
         id: '4',
@@ -33,7 +33,7 @@ const products = [
         category: 'short' ,
         img : 'https://www.nicepng.com/png/full/919-9195958_shorts-png-png-shorts.png' ,
         stock : 45 ,
-        description : 'short' 
+        description : 'short de baño' 
     },
     {
         id: '5',
@@ -42,7 +42,7 @@ const products = [
         category: 'medias' ,
         img : 'https://e7.pngegg.com/pngimages/417/298/png-clipart-sock-hosiery-black-socks-image-file-formats-socks.png' ,
         stock : 78 ,
-        description : 'medias' 
+        description : 'medias 3/4' 
     },
     {
         id: '6',
@@ -51,7 +51,7 @@ const products = [
         category: 'campera' ,
         img : 'https://www.montagne.com.ar/tecnologias/soft-down/img/campera.png',
         stock : 35 ,
-        description : 'campera' 
+        description : 'campera inflable' 
     }
 
 ]

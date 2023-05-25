@@ -1,8 +1,23 @@
-.NavBar{
+nav{
     display: flex;
+    justify-content: space-between;
+    background-color: #e3d5ca ;
+    font-size: 25px;
+    margin: 10px;
 }
 .categories{
     margin: 10px;
-    align-items: center;
-    justify-content: center;
+    padding: 20px;
+    height: 5vh;
 }
+.title{
+    font-size: 1.5rem;
+    color: #780000;
+    text-decoration: none;
+    margin-left: 10px ;
+}
+.title:hover{
+    color:#c1121f;
+}
+
+

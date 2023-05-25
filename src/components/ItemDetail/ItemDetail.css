@@ -1,0 +1,12 @@
+
+.ItemHeader{
+    font-size: 2rem;
+}
+.Info{
+    color: #212529;
+    padding: 5px;
+}
+.ItemFooter{
+    display: flex;
+    justify-content: space-evenly;
+}
