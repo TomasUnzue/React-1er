@@ -1,6 +1,13 @@
-
+.CardItem{
+    background-color: #e3d5ca;
+    margin: 15px 300px;
+    padding: 10px;
+    border: 100px;
+    border-radius: 2rem;
+}
 .ItemHeader{
     font-size: 2rem;
+    margin-top: 1px;
 }
 .Info{
     color: #212529;
@@ -8,5 +15,6 @@
 }
 .ItemFooter{
     display: flex;
-    justify-content: space-evenly;
+    
 }
+

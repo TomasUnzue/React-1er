@@ -1,4 +1,3 @@
-
 import './CartWidget.css'
 import cart from './assets/carro-de-la-carretilla.png'
 

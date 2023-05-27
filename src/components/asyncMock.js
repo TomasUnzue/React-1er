@@ -2,11 +2,11 @@ const products = [
     {
         id: '1',
         name: 'remera',
-        price : 10000 , 
+        price : 6000 , 
         category : 'remera basica',
         img :'https://e7.pngegg.com/pngimages/779/30/png-clipart-white-t-shirt-white-t-shirt.png',
         stock: 25,
-        description: 'remera'
+        description: 'Remera'
     },
     {
         id:'2',
@@ -20,38 +20,38 @@ const products = [
     {
         id: '3',
         name : 'buzo',
-        price : 1000,
+        price : 14500,
         category: 'buzo' ,
         img : 'https://estampadosmendoza.com.ar/wp-content/uploads/2017/04/buzo-liso-png.png' ,
         stock : 23 ,
-        description : 'buzo oversize' 
+        description : 'Buzo oversize' 
     },
     {
         id: '4',
         name : 'short',
-        price : 1000,
+        price : 4499,
         category: 'short' ,
         img : 'https://www.nicepng.com/png/full/919-9195958_shorts-png-png-shorts.png' ,
         stock : 45 ,
-        description : 'short de baño' 
+        description : 'Short de baño' 
     },
     {
         id: '5',
         name : 'medias',
-        price : 1000,
+        price : 3499,
         category: 'medias' ,
         img : 'https://e7.pngegg.com/pngimages/417/298/png-clipart-sock-hosiery-black-socks-image-file-formats-socks.png' ,
         stock : 78 ,
-        description : 'medias 3/4' 
+        description : 'Medias 3/4' 
     },
     {
         id: '6',
         name : 'campera',
-        price : 1000,
+        price : 18999,
         category: 'campera' ,
         img : 'https://www.montagne.com.ar/tecnologias/soft-down/img/campera.png',
         stock : 35 ,
-        description : 'campera inflable' 
+        description : 'Campera Inflable' 
     }
 
 ]
