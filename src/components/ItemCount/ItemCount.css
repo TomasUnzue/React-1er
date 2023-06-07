@@ -5,6 +5,5 @@
     border: 1px solid black;
 }
 .Counter{
-    display: flex;
     justify-content: space-evenly;
 }

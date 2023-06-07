@@ -1,5 +1,6 @@
 .CardItem{
-    margin: 2rem;  
+    margin: 2rem;
+    
 }
 .ItemImg {
     width: 300px;
@@ -19,7 +20,7 @@
 }
 .Option{
     color: #780000;
-    padding: 10px;
+    padding: 25px;
     text-decoration: none;
 }
 .Option:hover{
