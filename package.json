@@ -2,7 +2,7 @@
   "name": "mi.app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://tomasunzue.github.io/React-2da-preentrega/",
+  "homepage": "https://tomasunzue.github.io/proyecto-final-react/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
