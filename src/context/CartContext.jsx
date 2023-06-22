@@ -1,6 +1,4 @@
 import { createContext, useState } from "react";
-
-
 export const CartContext = createContext({
 cart: []
 });
@@ -12,26 +10,26 @@ const addItem = (item, quantity) => {
     if (!isInCart(item.id)) {
     setCart(prev => [...prev, { ...item, quantity }]);
     } else {
-    console.error("Producto ya agregado al carrito");
+    console.error("Producto agregado con exito!");
     }
-};
+}
 
 const removeItem = (itemId) => {
-    const updatedCart = cart.filter(prod => prod.id !== itemId);
-    setCart(updatedCart);
-};
+    const cartUpdated = cart.filter(prod => prod.id !== itemId);
+    setCart(cartUpdated);
+}
 
 const clearCart = () => {
     setCart([]);
-};
+}
 
 const isInCart = (itemId) => {
     return cart.some(prod => prod.id === itemId);
-};
+}
 
 return (
     <CartContext.Provider value={{ cart, addItem, removeItem, clearCart }}>
-{children}
+        {children}
     </CartContext.Provider>
 );
 };

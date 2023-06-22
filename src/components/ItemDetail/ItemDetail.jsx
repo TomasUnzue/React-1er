@@ -1,16 +1,35 @@
 import './ItemDetail.css'
+
 import ItemCount from '../ItemCount/ItemCount'
-import { useContext, useState } from 'react'
+
+import { useContext, useState, useEffect } from 'react'
 import { CartContext } from '../../context/CartContext'
+import { Link } from 'react-router-dom'
 
 const ItemDetail = ({id, name, img , category, description, price, stock}) => {
     
     const [quantityAdded, setQuantityAdded] = useState(0)
+    const [quantity, setQuantity] = useState(1)
+
+    const increment = () => {
+        if (quantity < stock){
+            setQuantity(quantity +1)
+        }
+        }
+    const decrement = () => {
+        if (quantity > 1){
+            setQuantity(quantity - 1)
+        }
+    }
+
 
     const { addItem } = useContext(CartContext)
-
+    useEffect(() => {
+        setQuantity(1)
+    }, [ id ]  )
     const handleOnAdd = (quantity) => {
         setQuantityAdded(quantity)
+        setQuantity(1)
 
         const item = {
             id, name, price
@@ -42,10 +61,10 @@ const ItemDetail = ({id, name, img , category, description, price, stock}) => {
             <footer className='ItemFooter'>
                 {
                     quantityAdded > 0 ? (
-                        <a href='/cart'
-                        className='Option'>Finalizar compra ! </a>
+                        <Link to='/cart'
+                        className='Option'>Finalizar compra ! </Link>
                     ) : (
-                        <ItemCount initial={1} stock={stock} onAdd={handleOnAdd} />
+                        <ItemCount quantity={quantity} stock={stock} onAdd={handleOnAdd} decrement={decrement} increment={increment}/>
                     )
                 }
                 

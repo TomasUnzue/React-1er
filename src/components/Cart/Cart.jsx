@@ -1,25 +1,36 @@
-import './Cart.css'
-import { useContext } from 'react'
-import { CartContext } from '../../context/CartContext'
-import { Link } from 'react-router-dom'
+import React, { useContext } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import { CartContext } from '../../context/CartContext';
+import './Cart.css';
 
 const Cart = () => {
-    const { clearCart, totalQuantity, total} = useContext(CartContext)
+const { clearCart, totalQuantity, total, cart } = useContext(CartContext);
+const navigate = useNavigate();
 
-    if(totalQuantity === 0){
-        return (
-            <div>
-                <h1>No hay items en el carrito</h1>
-                <Link to='/' className='Option'>Productos</Link>
-            </div>
-        )
-    }
+if (totalQuantity === 0) {
     return (
-        <div>
-            <h3>  Total  ${total}</h3>
-            <button onClick={() => clearCart()} className="Button">Eliminar carrito</button>
-            <Link to='/checkout' className='Option'>Checkout</Link> 
-        </div>
-    )
+    <>
+        <h1>No hay items en el carrito</h1>
+        <Link to='/' className='Option'>Productos</Link>
+    </>
+    );
 }
-export default Cart
+
+return (
+    <>
+    {cart.map((product) => (
+        <h1 key={product.id}>
+        {product.id} {product.name} {product.price} {product.stock}
+        </h1>
+    ))}
+    <h3>Total ${total}</h3>
+    <button onClick={() => {
+        clearCart();
+        navigate('/');
+    }} className="Button">Eliminar carrito</button>
+    <Link to='/checkout' className='Option'>Checkout</Link>
+    </>
+);
+};
+
+export default Cart;

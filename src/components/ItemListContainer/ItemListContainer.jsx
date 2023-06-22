@@ -9,14 +9,13 @@ import { db } from "../../services/firebaseConfig"
 const ItemListContainer = ({greeting}) => {
     const [products, setProducts] = useState([])
     const [loading, setLoading] = useState(true);
-    const { categoryId } = useParams
+    const { categoryId } = useParams()
 
     useEffect(() =>{
         setLoading(true)
-    })
-    const collectionRef = categoryId 
-        ? query(collection(db, 'products'),where ('category', '==', categoryId  ))
-        : collection (db, 'products')
+        const collectionRef = categoryId 
+        ? query(collection(db, 'Products'),where ('category', '==', categoryId  ))
+        : collection (db, 'Products')
 
         getDocs(collectionRef)
             .then(response => {
@@ -32,19 +31,7 @@ const ItemListContainer = ({greeting}) => {
             .finally(() => {
                 setLoading(false)
             })
-            
-
-    // useEffect(() => {
-    //     const asyncFunc = categoryId ? getProductById : getProducts
-        
-    //     asyncFunc(categoryId)
-    //     .then(response => {
-    //         setProducts(response)
-    //     })
-    //     .catch(error => {
-    //         console.log(error)
-    //     })
-    // }, [categoryId])
+    }, [categoryId] )
     
     return (
         <div>
